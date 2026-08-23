@@ -19,6 +19,18 @@
 - Apple and Jamf device management: certified Jamf MSP, Integrator, and
   Services Partner; member of the Apple Consultants Network.
 
+## Site pages
+
+- Home: https://ai.atlastechnology.solutions/
+- AI Integrations: https://ai.atlastechnology.solutions/ai-integrations.html
+- Agentic Workflows: https://ai.atlastechnology.solutions/agentic-workflows.html
+- AI Training: https://ai.atlastechnology.solutions/ai-training.html
+- AI Security: https://ai.atlastechnology.solutions/ai-security.html
+- AI Policy Creation: https://ai.atlastechnology.solutions/ai-policy.html
+- About: https://ai.atlastechnology.solutions/about.html
+- FAQ: https://ai.atlastechnology.solutions/faq.html
+- Contact: https://ai.atlastechnology.solutions/contact.html
+
 ## Contact
 
 - Email: consulting@atlascarolina.com
