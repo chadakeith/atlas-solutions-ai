@@ -1,0 +1,36 @@
+# Atlas AI
+
+> Atlas AI is the artificial intelligence practice of Atlas Technology Solutions
+> (atlascarolina.com), an Apple-certified IT consultancy and managed service
+> provider based in Davidson, NC, serving Charlotte and the Carolinas since 2018.
+
+## What Atlas AI offers
+
+- AI Integrations: connecting AI to the tools and software systems a business
+  already uses (email, ticketing, CRM, documents, scheduling).
+- Agentic Workflows: designing and building AI agents that execute multi-step
+  business processes with human checkpoints.
+- AI Training: hands-on workshops and leadership briefings for teams adopting AI.
+- AI Security: data governance, access control, vendor evaluation, and safe AI
+  deployment, backed by an established cybersecurity practice.
+- AI Policy Creation: practical acceptable-use and governance policies for AI
+  in the workplace.
+- Managed IT Services and Cybersecurity (via Atlas Technology Solutions).
+- Apple and Jamf device management: certified Jamf MSP, Integrator, and
+  Services Partner; member of the Apple Consultants Network.
+
+## Contact
+
+- Email: consulting@atlascarolina.com
+- Website: https://ai.atlastechnology.solutions/
+- Parent company: https://www.atlascarolina.com/
+- Location: Davidson, North Carolina, USA (serving Charlotte and the Carolinas)
+
+## Key facts
+
+- Founded: 2018 (Atlas Technology Solutions)
+- Certifications: Apple Certified Support Professional, Apple Deployment &
+  Management, Jamf Certified Admin, Jamf Product Professional, Ubiquiti
+  Enterprise Wireless Admin
+- Apple Consultants Network profile: https://consultants.apple.com/us/profile/5424771
+- Jamf partnership: https://www.partnerbase.com/atlas-technology-solutions/jamf
