@@ -30,6 +30,7 @@
 - About: https://ai.atlastechnology.solutions/about.html
 - FAQ: https://ai.atlastechnology.solutions/faq.html
 - Contact: https://ai.atlastechnology.solutions/contact.html
+- Blog: https://ai.atlastechnology.solutions/blog/ (RSS: https://ai.atlastechnology.solutions/feed.xml)
 
 ## Contact
 

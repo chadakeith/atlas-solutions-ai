@@ -1,0 +1,30 @@
+---
+layout: default
+title: Blog — AI Insights for Business
+description: Practical guidance on AI integrations, agentic workflows, security, and policy from the Atlas AI team in Charlotte, NC.
+---
+<header class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Atlas AI</a> / Blog</p>
+    <h1>Insights, in <span class="grad">plain English.</span></h1>
+    <p class="lead">
+      Practical guidance on putting AI to work in a real business — no hype, no jargon.
+      Written by the same team that builds it for our clients.
+    </p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="cards two">
+      {% for post in site.posts %}
+      <article class="card reveal">
+        <p class="crumbs">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description }}</p>
+        <a class="more" href="{{ post.url }}">Read the post</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

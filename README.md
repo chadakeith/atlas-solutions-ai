@@ -86,3 +86,27 @@ domain and adding a CNAME record at your DNS provider.
   content and Embed blocks only where you want custom styling.
 - Colors used: navy `#16324f`, teal `#2d8f8f`, light gray `#f5f7fa`.
   Change them consistently across files to re-theme the site.
+
+## Writing a blog post
+
+The blog is powered by Jekyll (built into GitHub Pages — no extra setup).
+To publish a post:
+
+1. Create a Markdown file in `_posts/` named `YYYY-MM-DD-short-slug.md`
+2. Start it with front matter:
+
+   ```
+   ---
+   layout: post
+   title: "Your post title"
+   description: "One-sentence summary shown on the blog index and in search results."
+   author: "Atlas AI"
+   reading_time: "5 min read"
+   ---
+   ```
+
+3. Write the post below in plain Markdown (`##` headings, `**bold**`, links, lists).
+4. Commit and push — the post appears at `/blog/YYYY/short-slug/` and on the
+   blog index automatically. Add its URL to `sitemap.xml` for best SEO.
+
+Posts dated in the future won't publish until that date passes.

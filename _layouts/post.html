@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<header class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Atlas AI</a> / <a href="/blog/">Blog</a></p>
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.description }}</p>
+    <p class="crumbs">{{ page.date | date: "%B %-d, %Y" }} · {{ page.author | default: "Atlas AI" }}{% if page.reading_time %} · {{ page.reading_time }}{% endif %}</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap prose post-body">
+    {{ content }}
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <p class="kicker">Keep reading</p>
+    <div class="related">
+      <a href="/blog/">All posts</a>
+      <a href="/ai-integrations.html">AI Integrations</a>
+      <a href="/agentic-workflows.html">Agentic Workflows</a>
+      <a href="/ai-security.html">AI Security</a>
+    </div>
+  </div>
+</section>

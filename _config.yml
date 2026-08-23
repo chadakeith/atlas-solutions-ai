@@ -1,0 +1,17 @@
+title: Atlas AI
+description: AI integrations, agentic workflows, training, security, and policy from Atlas Technology Solutions.
+url: "https://ai.atlastechnology.solutions"
+timezone: America/New_York
+
+permalink: /blog/:year/:title/
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+feed:
+  posts_limit: 20
+
+exclude:
+  - README.md

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Atlas AI</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="Atlas AI">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" type="application/rss+xml" title="Atlas AI Blog" href="{{ site.url }}/feed.xml">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230a84ff'/%3E%3Cstop offset='1' stop-color='%23bf5af2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Cpath d='M32 12 L50 52 H42 L32 28 L22 52 H14 Z' fill='url(%23g)'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/assets/style.css">
+  {% if page.layout == 'post' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page.description | jsonify }},
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "author": {"@type": "Organization", "name": "{{ page.author | default: 'Atlas AI' }}"},
+    "publisher": {"@id": "https://ai.atlastechnology.solutions/#org"},
+    "mainEntityOfPage": "{{ site.url }}{{ page.url }}"
+  }
+  </script>
+  {% endif %}
+</head>
+<body>
+
+  <nav class="top" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/">Atlas <span>AI</span></a>
+      <div class="nav-links">
+        <a href="/index.html#services">Services</a>
+        <a href="/about.html">About</a>
+        <a href="/blog/">Blog</a>
+        <a href="/faq.html">FAQ</a>
+        <a class="nav-cta" href="/contact.html">Talk to us</a>
+      </div>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2 class="reveal">Ready to put AI to work?</h2>
+      <p class="sub reveal">Tell us about your tools and your goals — we&rsquo;ll reply with honest guidance.</p>
+      <div class="btn-row reveal">
+        <a class="btn btn-primary" href="/contact.html">Contact us</a>
+        <a class="btn btn-ghost" href="mailto:consulting@atlascarolina.com?subject=AI%20Consulting%20Inquiry">Email consulting@atlascarolina.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div><h4>Services</h4><ul>
+          <li><a href="/ai-integrations.html">AI Integrations</a></li>
+          <li><a href="/agentic-workflows.html">Agentic Workflows</a></li>
+          <li><a href="/ai-training.html">AI Training</a></li>
+          <li><a href="/ai-security.html">AI Security</a></li>
+          <li><a href="/ai-policy.html">AI Policy Creation</a></li>
+        </ul></div>
+        <div><h4>Company</h4><ul>
+          <li><a href="/about.html">About Atlas</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="https://www.atlascarolina.com/">atlascarolina.com</a></li>
+        </ul></div>
+        <div><h4>Connect</h4><ul>
+          <li><a href="mailto:consulting@atlascarolina.com">consulting@atlascarolina.com</a></li>
+          <li><a href="https://www.linkedin.com/company/atlascarolina">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@atlastechnologysolutions">YouTube</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/atlas-solutions-podcast/id1545072314">Podcast</a></li>
+          <li><a href="/feed.xml">RSS feed</a></li>
+        </ul></div>
+      </div>
+      <div class="foot-legal">
+        <strong>Atlas AI</strong> — an <a href="https://www.atlascarolina.com/">Atlas Technology Solutions</a> offering ·
+        Davidson, NC · Serving Charlotte &amp; the Carolinas ·
+        &copy; 2026 Atlas Technology Solutions. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>

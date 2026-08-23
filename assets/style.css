@@ -264,3 +264,21 @@ footer a:hover { color: var(--ink); }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* ---------- Blog ---------- */
+.post-body { font-size: 18px; }
+.post-body h2 { font-size: clamp(26px, 3.6vw, 36px); margin: 44px 0 14px; }
+.post-body h3 { font-size: 22px; font-weight: 700; margin: 34px 0 10px; }
+.post-body p { margin-bottom: 20px; color: #3a3a3c; }
+.post-body ul, .post-body ol { margin: 0 0 20px 24px; color: #3a3a3c; }
+.post-body li { margin-bottom: 10px; }
+.post-body blockquote {
+  border-left: 3px solid var(--accent); padding: 4px 0 4px 20px; margin: 0 0 20px;
+  color: var(--ink-soft); font-size: 19px;
+}
+.post-body strong { color: var(--ink); }
+.post-body hr { border: none; border-top: 1px solid #d2d2d7; margin: 40px 0; }
+.post-body code {
+  background: var(--bg-alt); border-radius: 6px; padding: 2px 7px;
+  font-size: 15px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
