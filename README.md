@@ -1,14 +1,36 @@
 # Atlas Google Site
 
-Starter kit for the Atlas Carolina site hosted on **Google Sites**.
+The Atlas Carolina website, hosted on **GitHub Pages** with push-to-publish
+deploys, with optional embedding into **Google Sites**.
 
-## How this works
+## How hosting works (push to publish)
+
+Every push to this repo's default branch automatically deploys the site to
+GitHub Pages via `.github/workflows/deploy.yml`:
+
+**Live site:** https://chadakeith.github.io/AtlasGoogleSite/
+
+To update the site:
+
+1. Edit `index.html` (or any file).
+2. Commit and push.
+3. The **Deploy site to GitHub Pages** action runs (~30–60 s); the live URL
+   updates when it finishes. Check progress under the repo's **Actions** tab.
+
+No manual publish step, no copy-pasting — the repo *is* the site.
+
+## Google Sites (optional wrapper)
 
 Google Sites doesn't host code files — you build pages in its drag-and-drop
 editor at [sites.google.com](https://sites.google.com), and custom HTML is
-added through **Embed blocks**. This repo keeps the site's custom HTML under
-version control so sections can be edited here, previewed, and then pasted
-into the Google Site.
+added through **Embed blocks**. There are two ways to combine it with this repo:
+
+- **Embed by URL** (recommended now that hosting is live): in Google Sites,
+  **Insert → Embed → By URL** and paste the live site URL above. The Google
+  Site then always shows the latest deploy — push here, and it updates there.
+- **Embed code blocks**: paste the section files from `embeds/` into
+  individual Embed blocks (details below). Use this only if you want to mix
+  custom sections with native Google Sites content.
 
 ## Repo layout
 
