@@ -5,8 +5,8 @@ deploys, with optional embedding into **Google Sites**.
 
 ## How hosting works (push to publish)
 
-Every push to this repo's default branch automatically deploys the site to
-GitHub Pages via `.github/workflows/deploy.yml`:
+GitHub Pages is set to **Deploy from a branch** (Settings → Pages), so GitHub
+automatically republishes the site every time the branch is pushed:
 
 **Live site:** https://chadakeith.github.io/AtlasGoogleSite/
 
@@ -14,10 +14,13 @@ To update the site:
 
 1. Edit `index.html` (or any file).
 2. Commit and push.
-3. The **Deploy site to GitHub Pages** action runs (~30–60 s); the live URL
-   updates when it finishes. Check progress under the repo's **Actions** tab.
+3. GitHub's built-in **pages build and deployment** action runs (~30–60 s);
+   the live URL updates when it finishes. Check progress under the repo's
+   **Actions** tab.
 
 No manual publish step, no copy-pasting — the repo *is* the site.
+`index.html` at the repo root is the homepage; other `.html` files are served
+at their paths (e.g. `about.html` → `/AtlasGoogleSite/about.html`).
 
 ## Google Sites (optional wrapper)
 
