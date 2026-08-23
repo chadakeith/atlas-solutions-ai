@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas Carolina</title>
+  <style>
+    :root {
+      --navy: #16324f;
+      --teal: #2d8f8f;
+      --light: #f5f7fa;
+      --text: #2b3440;
+      --muted: #5c6b7a;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: #ffffff;
+    }
+    .section { padding: 64px 24px; }
+    .container { max-width: 960px; margin: 0 auto; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #1f4a6e 100%);
+      color: #ffffff;
+      text-align: center;
+      padding: 96px 24px;
+    }
+    .hero h1 { font-size: 2.75rem; margin-bottom: 16px; letter-spacing: -0.5px; }
+    .hero p { font-size: 1.25rem; color: #cfdce8; max-width: 640px; margin: 0 auto 32px; }
+    .btn {
+      display: inline-block;
+      background: var(--teal);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .btn:hover { background: #257575; }
+
+    /* About */
+    .about { background: #ffffff; }
+    .about h2, .services h2, .contact h2 {
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .about p { max-width: 720px; margin: 0 auto; text-align: center; color: var(--muted); font-size: 1.1rem; }
+
+    /* Services */
+    .services { background: var(--light); }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 32px 24px;
+      box-shadow: 0 2px 8px rgba(22, 50, 79, 0.08);
+    }
+    .card h3 { color: var(--navy); margin-bottom: 8px; font-size: 1.2rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+
+    /* Contact */
+    .contact { background: #ffffff; text-align: center; }
+    .contact p { color: var(--muted); margin-bottom: 24px; }
+
+    /* Footer */
+    footer {
+      background: var(--navy);
+      color: #cfdce8;
+      text-align: center;
+      padding: 24px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Atlas Carolina</h1>
+    <p>Welcome. This is the starting point for our site &mdash; more to come soon.</p>
+    <a class="btn" href="#contact">Get in Touch</a>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Atlas Carolina is built on doing things right. This section is a placeholder &mdash;
+        replace it with a short paragraph about who you are, what you do, and who you serve.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section services" id="services">
+    <div class="container">
+      <h2>What We Do</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Service One</h3>
+          <p>Replace this with a short description of your first service or offering.</p>
+        </div>
+        <div class="card">
+          <h3>Service Two</h3>
+          <p>Replace this with a short description of your second service or offering.</p>
+        </div>
+        <div class="card">
+          <h3>Service Three</h3>
+          <p>Replace this with a short description of your third service or offering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Ready to talk? Reach out and we'll get back to you.</p>
+      <a class="btn" href="mailto:chad@atlascarolina.com">Email Us</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Atlas Carolina. All rights reserved.
+  </footer>
+
+</body>
+</html>
