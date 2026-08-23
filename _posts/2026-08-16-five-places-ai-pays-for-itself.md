@@ -3,6 +3,8 @@ layout: post
 title: "Five places AI pays for itself in a small business"
 description: "Skip the moonshots. These five unglamorous workflows are where AI reliably earns back its cost in weeks — using the tools your business already runs on."
 author: "Atlas AI"
+image: "/assets/img/blog-ai-roi-ascending-lights.jpg"
+image_alt: "Five ascending points of light above a thin baseline — visualizing measurable AI return on investment"
 reading_time: "5 min read"
 ---
 

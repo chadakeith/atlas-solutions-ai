@@ -3,6 +3,8 @@ layout: post
 title: "What is an agentic workflow? A plain-English guide for business owners"
 description: "Chatbots answer questions. Agents finish tasks. Here's what agentic workflows actually are, where they fit in a real business, and the guardrails that separate a capacity gain from a liability."
 author: "Atlas AI"
+image: "/assets/img/blog-agentic-workflow-path.jpg"
+image_alt: "A path of light reaching a glowing decision node and continuing on the chosen branch — an agentic workflow in action"
 reading_time: "6 min read"
 ---
 

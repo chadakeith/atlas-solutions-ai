@@ -19,6 +19,7 @@ description: Practical guidance on AI integrations, agentic workflows, security,
     <div class="cards two">
       {% for post in site.posts %}
       <article class="card reveal">
+        {% if post.image %}<img class="card-thumb" src="{{ post.image }}" alt="{{ post.image_alt }}" width="1600" height="640" loading="lazy" decoding="async">{% endif %}
         <p class="crumbs">{{ post.date | date: "%B %-d, %Y" }}</p>
         <h3>{{ post.title }}</h3>
         <p>{{ post.description }}</p>

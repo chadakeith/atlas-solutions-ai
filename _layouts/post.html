@@ -9,6 +9,11 @@ layout: default
     <p class="crumbs">{{ page.date | date: "%B %-d, %Y" }} · {{ page.author | default: "Atlas AI" }}{% if page.reading_time %} · {{ page.reading_time }}{% endif %}</p>
   </div>
 </header>
+{% if page.image %}
+<figure class="art-full">
+  <img src="{{ page.image }}" alt="{{ page.image_alt }}" width="1600" height="640" loading="eager" decoding="async">
+</figure>
+{% endif %}
 
 <section>
   <div class="wrap prose post-body">

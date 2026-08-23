@@ -3,6 +3,8 @@ layout: post
 title: "Your team is already using AI. Here's how to make that a good thing."
 description: "Shadow AI is in your business today, whether you sanctioned it or not. The answer isn't a ban — it's governed adoption: good tools, clear rules, and controls that make the safe path the easy path."
 author: "Atlas AI"
+image: "/assets/img/blog-shadow-ai-governance.jpg"
+image_alt: "A seam of blue-violet light dividing darkness from shadow — visualizing shadow AI made visible through governance"
 reading_time: "5 min read"
 ---
 
