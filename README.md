@@ -1,6 +1,6 @@
-# Atlas Google Site
+# Atlas AI Site
 
-The Atlas Carolina website, hosted on **GitHub Pages** with push-to-publish
+The Atlas AI website (ai.atlastechnology.solutions), hosted on **GitHub Pages** with push-to-publish
 deploys, with optional embedding into **Google Sites**.
 
 ## How hosting works (push to publish)
@@ -8,7 +8,7 @@ deploys, with optional embedding into **Google Sites**.
 GitHub Pages is set to **Deploy from a branch** (Settings → Pages), so GitHub
 automatically republishes the site every time the branch is pushed:
 
-**Live site:** https://chadakeith.github.io/AtlasGoogleSite/
+**Live site:** https://ai.atlastechnology.solutions/
 
 To update the site:
 
@@ -20,7 +20,7 @@ To update the site:
 
 No manual publish step, no copy-pasting — the repo *is* the site.
 `index.html` at the repo root is the homepage; other `.html` files are served
-at their paths (e.g. `about.html` → `/AtlasGoogleSite/about.html`).
+at their paths (e.g. `about.html` → `ai.atlastechnology.solutions/about.html`).
 
 ## Google Sites (optional wrapper)
 
@@ -52,7 +52,7 @@ can't share a stylesheet.
 ## Setting up the Google Site (one-time)
 
 1. Go to [sites.google.com](https://sites.google.com) and click **Blank site** (+).
-2. Name the site (top-left) — e.g. *Atlas Carolina*.
+2. Name the site (top-left) — e.g. *Atlas AI*.
 3. Delete the default header banner if you want the custom hero instead
    (hover over it → delete), or keep it and skip the hero embed.
 4. For each section:
