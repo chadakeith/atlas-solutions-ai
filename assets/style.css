@@ -215,6 +215,34 @@ a.card-link:hover { text-decoration: none; }
 .checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
 .checklist li strong { color: var(--ink); }
 
+/* ---------- Staff / team ---------- */
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 28px 22px;
+  margin-top: 12px;
+}
+.staff-card { text-align: center; }
+.staff-card img {
+  width: 148px; height: 148px; object-fit: cover; object-position: center top;
+  border-radius: 50%; display: block; margin: 0 auto 16px;
+  background: #e8e8ed;
+}
+.staff-card h3 {
+  font-size: 17px; font-weight: 700; letter-spacing: -0.01em;
+  margin-bottom: 4px; color: var(--ink);
+}
+.staff-card .role {
+  font-size: 14px; color: var(--ink-soft); display: block;
+}
+.band .staff-card h3 { color: #f5f5f7; }
+.band .staff-card .role { color: #a1a1a6; }
+.band .staff-card img { box-shadow: 0 0 0 3px rgba(255,255,255,0.08); }
+@media (max-width: 520px) {
+  .staff-grid { grid-template-columns: repeat(2, 1fr); gap: 22px 14px; }
+  .staff-card img { width: 120px; height: 120px; }
+}
+
 /* ---------- Credentials ---------- */
 .cred-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
 .cred {
