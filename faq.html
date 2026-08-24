@@ -21,6 +21,7 @@
   <link rel="apple-touch-icon" href="/assets/img/atlas-ai-icon-512.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230a84ff'/%3E%3Cstop offset='1' stop-color='%23bf5af2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Cpath d='M32 12 L50 52 H42 L32 28 L22 52 H14 Z' fill='url(%23g)'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site-config.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,7 +38,8 @@
       {"@type": "Question", "name": "Do you only work with Apple environments?", "acceptedAnswer": {"@type": "Answer", "text": "No. Apple and Jamf expertise is our heritage and remains a specialty, but AI engagements span whatever your business runs — Google Workspace, Microsoft 365, Windows, and mixed environments included."}},
       {"@type": "Question", "name": "Do you work with businesses outside the Charlotte area?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We are based in Davidson, NC and serve Charlotte and the Carolinas in person, and AI consulting, training, and integration work is delivered remotely to clients beyond the region."}},
       {"@type": "Question", "name": "What happens after an AI project launches?", "acceptedAnswer": {"@type": "Answer", "text": "We are a managed service provider at heart, so ongoing operation is our default: monitoring, tuning, and evolving integrations and agents as your business and the technology change. One-time engagements are available too."}},
-      {"@type": "Question", "name": "Our team is skeptical of AI. Where should we start?", "acceptedAnswer": {"@type": "Answer", "text": "Start with an executive briefing or a single team workshop. Skepticism usually reflects bad first experiences with generic tools; seeing AI applied carefully to your own real work, with clear guardrails, changes the conversation."}}
+      {"@type": "Question", "name": "Our team is skeptical of AI. Where should we start?", "acceptedAnswer": {"@type": "Answer", "text": "Start with an executive briefing or a single team workshop. Skepticism usually reflects bad first experiences with generic tools; seeing AI applied carefully to your own real work, with clear guardrails, changes the conversation."}},
+      {"@type": "Question", "name": "Is Atlas AI right for small businesses?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — small businesses are our core audience. We work with companies typically between 10 and 150 people that need practical AI in the tools they already use. Start with a free AI Readiness Call or a scoped first project such as a team workshop or integration sprint."}}
     ]
   }
   </script>
@@ -46,13 +48,17 @@
 
   <nav class="top" aria-label="Primary">
     <div class="nav-inner">
-      <a class="nav-logo" href="index.html">Atlas <span>AI</span></a>
-      <div class="nav-links">
+      <a class="nav-logo" href="index.html" aria-label="Atlas AI home">Atlas <span>AI</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <div class="nav-links" id="nav-menu">
+        <a href="index.html#offerings">Offerings</a>
         <a href="index.html#services">Services</a>
         <a href="about.html">About</a>
         <a href="blog/">Blog</a>
         <a href="faq.html">FAQ</a>
-        <a class="nav-cta" href="contact.html">Talk to us</a>
+        <a class="nav-cta" href="contact.html" data-track="nav_cta">Free readiness call</a>
       </div>
     </div>
   </nav>
@@ -80,6 +86,10 @@
         <details>
           <summary>How much does AI consulting cost?</summary>
           <p>It depends on scope, which is why we always start with a scoped proposal rather than an open&#8209;ended engagement. Most clients begin with a single high&#8209;value project — one integration, one workflow, one policy — so the first investment is modest and the return is measurable.</p>
+        </details>
+        <details>
+          <summary>Is Atlas AI right for small businesses?</summary>
+          <p>Yes — that&rsquo;s our core audience. We work with companies typically between 10 and 150 people that need practical AI in the tools they already use, not a platform migration. Start with a <a href="contact.html?interest=readiness-call">free AI Readiness Call</a> or browse our <a href="index.html#offerings">scoped offerings</a> for workshops, integrations, and policy starters.</p>
         </details>
         <details>
           <summary>Our team is skeptical of AI. Where should we start?</summary>

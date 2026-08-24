@@ -21,6 +21,7 @@
   <link rel="apple-touch-icon" href="/assets/img/atlas-ai-icon-512.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230a84ff'/%3E%3Cstop offset='1' stop-color='%23bf5af2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Cpath d='M32 12 L50 52 H42 L32 28 L22 52 H14 Z' fill='url(%23g)'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site-config.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,13 +36,17 @@
 
   <nav class="top" aria-label="Primary">
     <div class="nav-inner">
-      <a class="nav-logo" href="index.html">Atlas <span>AI</span></a>
-      <div class="nav-links">
+      <a class="nav-logo" href="index.html" aria-label="Atlas AI home">Atlas <span>AI</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <div class="nav-links" id="nav-menu">
+        <a href="index.html#offerings">Offerings</a>
         <a href="index.html#services">Services</a>
         <a href="about.html">About</a>
         <a href="blog/">Blog</a>
         <a href="faq.html">FAQ</a>
-        <a class="nav-cta" href="contact.html">Talk to us</a>
+        <a class="nav-cta" href="contact.html" data-track="nav_cta">Free readiness call</a>
       </div>
     </div>
   </nav>
@@ -51,11 +56,12 @@
       <p class="crumbs"><a href="index.html">Atlas AI</a> / Contact</p>
       <h1>Let&rsquo;s <span class="grad">talk.</span></h1>
       <p class="lead">
-        Tell us about your tools and your goals. We&rsquo;ll reply with honest guidance —
-        and if we&rsquo;re a fit, a clear first step. No pressure, no jargon.
+        Start with a free 30&#8209;minute AI Readiness Call — or send a message below.
+        We&rsquo;ll reply with honest guidance and, if we&rsquo;re a fit, a clear first step.
       </p>
       <div class="btn-row left">
-        <a class="btn btn-primary" href="mailto:consulting@atlascarolina.com?subject=AI%20Consulting%20Inquiry">Email consulting@atlascarolina.com</a>
+        <a class="btn btn-primary" href="?interest=readiness-call#form" data-track="contact_hero_cta">Book a free readiness call</a>
+        <a class="btn btn-ghost" href="mailto:consulting@atlascarolina.com?subject=AI%20Consulting%20Inquiry">Email consulting@atlascarolina.com</a>
       </div>
     </div>
   </header>
@@ -83,6 +89,7 @@
         <input type="hidden" name="_subject" value="New Atlas AI inquiry from ai.atlastechnology.solutions">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://ai.atlastechnology.solutions/contact.html?sent=1#form">
+        <input type="hidden" id="f-interest" name="interest" value="">
         <div>
           <label for="f-name">Name *</label>
           <input id="f-name" name="name" type="text" required autocomplete="name">
@@ -103,8 +110,8 @@
           <label for="f-message">How can we help? *</label>
           <textarea id="f-message" name="message" required placeholder="Tell us about your current tools and what you'd like AI to do…"></textarea>
         </div>
-        <button class="form-submit" type="submit">Send message</button>
-        <p class="form-note">We&rsquo;ll only use your details to respond to this inquiry.</p>
+        <button class="form-submit" type="submit" data-track="contact_form_submit">Send message</button>
+        <p class="form-note">We&rsquo;ll only use your details to respond to this inquiry. See our <a href="privacy.html">privacy notice</a>.</p>
       </form>
     </div>
   </section>
@@ -137,6 +144,7 @@
           <li><a href="blog/">Blog</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
           <li><a href="https://www.atlascarolina.com/">atlascarolina.com</a></li>
         </ul></div>
         <div><h4>Connect</h4><ul>

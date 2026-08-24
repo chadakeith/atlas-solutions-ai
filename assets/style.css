@@ -10,6 +10,10 @@
   --maxw: 1024px;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
 html { scroll-behavior: smooth; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -46,7 +50,39 @@ nav.top {
   padding: 5px 14px; border-radius: 980px; font-size: 13px; font-weight: 500;
 }
 .nav-cta:hover { background: #0071e3; text-decoration: none; }
-@media (max-width: 760px) { .nav-links a:not(.nav-cta) { display: none; } }
+.nav-toggle {
+  display: none; background: none; border: none; width: 44px; height: 44px;
+  padding: 10px; cursor: pointer; color: #f5f5f7; flex-shrink: 0;
+}
+.nav-toggle-icon {
+  display: block; width: 22px; height: 2px; background: currentColor; position: relative;
+}
+.nav-toggle-icon::before, .nav-toggle-icon::after {
+  content: ""; position: absolute; left: 0; width: 22px; height: 2px;
+  background: currentColor; transition: transform 0.2s ease;
+}
+.nav-toggle-icon::before { top: -7px; }
+.nav-toggle-icon::after { top: 7px; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon { background: transparent; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon::before { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon::after { transform: translateY(-7px) rotate(-45deg); }
+@media (max-width: 760px) {
+  .nav-toggle { display: block; }
+  .nav-inner { position: relative; }
+  .nav-links {
+    display: none; position: absolute; top: 48px; left: 0; right: 0;
+    background: rgba(0,0,0,0.96); flex-direction: column; align-items: stretch;
+    padding: 8px 22px 20px; gap: 0; border-top: 1px solid #333336;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a {
+    padding: 14px 0; font-size: 17px; border-bottom: 1px solid #333336; width: 100%;
+    color: rgba(245,245,247,0.92);
+  }
+  .nav-links a.nav-cta { margin-top: 12px; text-align: center; border: none; padding: 10px 14px; }
+}
 
 /* ---------- Hero (home) ---------- */
 .hero {
@@ -282,6 +318,70 @@ footer a:hover { color: var(--ink); }
   background: var(--bg-alt); border-radius: 6px; padding: 2px 7px;
   font-size: 15px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
+
+/* ---------- Offerings (SMB packages) ---------- */
+.offerings { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; }
+.offering {
+  background: #fff; border-radius: var(--radius); padding: 36px 30px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06); border: 1px solid transparent;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.offering.featured {
+  border-color: rgba(10,132,255,0.35);
+  box-shadow: 0 8px 32px rgba(10,132,255,0.12);
+}
+.offering:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,0.10); }
+.offering .badge {
+  display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+}
+.offering h3 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+.offering .price-hint { font-size: 15px; color: var(--ink-soft); margin-bottom: 14px; }
+.offering p { font-size: 16px; color: var(--ink-soft); margin-bottom: 16px; }
+.offering ul {
+  list-style: none; margin: 0 0 20px; font-size: 15px; color: var(--ink-soft);
+}
+.offering li { padding-left: 22px; position: relative; margin-bottom: 8px; }
+.offering li::before {
+  content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700;
+}
+.offering a.btn { font-size: 15px; padding: 11px 22px; }
+
+/* ---------- Testimonials ---------- */
+.testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+.testimonial {
+  background: #fff; border-radius: var(--radius); padding: 34px 30px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+.band .testimonial { background: #1d1d1f; }
+.testimonial blockquote {
+  font-size: 17px; line-height: 1.55; color: #3a3a3c; margin: 0 0 18px;
+  font-style: normal;
+}
+.band .testimonial blockquote { color: #d2d2d7; }
+.testimonial footer { font-size: 14px; color: var(--ink-soft); }
+.band .testimonial footer { color: #86868b; }
+.testimonial footer strong { color: var(--ink); display: block; margin-bottom: 4px; }
+.band .testimonial footer strong { color: #f5f5f7; }
+.testimonial-note {
+  font-size: 14px; color: var(--ink-soft); margin-top: 28px; text-align: center;
+}
+
+/* ---------- Subscribe band ---------- */
+.subscribe-row {
+  display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center;
+  max-width: 520px; margin: 28px auto 0;
+}
+.subscribe-row input[type="email"] {
+  flex: 1 1 220px; min-width: 200px; padding: 13px 16px; border-radius: 980px;
+  border: 1px solid #333336; background: #1d1d1f; color: #f5f5f7; font-size: 16px;
+}
+.subscribe-row input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+.subscribe-row button {
+  background: var(--accent); color: #fff; border: none; cursor: pointer;
+  padding: 13px 28px; border-radius: 980px; font-size: 16px; font-weight: 500;
+}
+.subscribe-row button:hover { background: #0071e3; }
 
 /* ---------- Imagery ---------- */
 .art-full { background: #000; margin: 0; }
