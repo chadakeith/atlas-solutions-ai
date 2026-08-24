@@ -3,9 +3,14 @@
 > Atlas AI is the artificial intelligence practice of Atlas Technology Solutions
 > (atlascarolina.com), an Apple-certified IT consultancy and managed service
 > provider based in Davidson, NC, serving Charlotte and the Carolinas since 2018.
+> Primary audience: small businesses (typically 10–150 employees), not individual consumers.
 
 ## What Atlas AI offers
 
+- AI Readiness Call (free 30-minute consultation for small businesses)
+- Team AI Workshop (hands-on training, half-day formats)
+- First Integration Sprint (scoped AI integration into existing tools)
+- Policy & Security Starter (governance + technical review package)
 - AI Integrations: connecting AI to the tools and software systems a business
   already uses (email, ticketing, CRM, documents, scheduling).
 - Agentic Workflows: designing and building AI agents that execute multi-step
@@ -28,8 +33,10 @@
 - AI Security: https://ai.atlastechnology.solutions/ai-security.html
 - AI Policy Creation: https://ai.atlastechnology.solutions/ai-policy.html
 - About: https://ai.atlastechnology.solutions/about.html
+- Team: https://ai.atlastechnology.solutions/team.html
 - FAQ: https://ai.atlastechnology.solutions/faq.html
 - Contact: https://ai.atlastechnology.solutions/contact.html
+- Privacy: https://ai.atlastechnology.solutions/privacy.html
 - Blog: https://ai.atlastechnology.solutions/blog/ (RSS: https://ai.atlastechnology.solutions/feed.xml)
 
 ## Contact

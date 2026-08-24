@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atlas AI — AI Integration, Agentic Workflows &amp; AI Security | Atlas Technology Solutions</title>
-  <meta name="description" content="Atlas AI, an Atlas Technology Solutions offering, brings AI into the tools your business already uses: AI integrations, agentic workflows, team training, AI security, and AI policy creation — backed by Apple-certified, Jamf-partnered IT experts in Charlotte and the Carolinas.">
+  <meta name="description" content="Atlas AI helps small businesses adopt AI safely: integrations into tools you already use, hands-on team training, agentic workflows, security, and policy — from Apple-certified IT experts in Charlotte and the Carolinas.">
   <meta name="author" content="Atlas Technology Solutions">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://ai.atlastechnology.solutions/">
@@ -25,6 +25,7 @@
   <link rel="apple-touch-icon" href="/assets/img/atlas-ai-icon-512.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230a84ff'/%3E%3Cstop offset='1' stop-color='%23bf5af2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Cpath d='M32 12 L50 52 H42 L32 28 L22 52 H14 Z' fill='url(%23g)'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site-config.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -72,26 +73,30 @@
   <nav class="top" aria-label="Primary">
     <div class="nav-inner">
       <a class="nav-logo" href="index.html" aria-label="Atlas AI home">Atlas <span>AI</span></a>
-      <div class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <div class="nav-links" id="nav-menu">
+        <a href="index.html#offerings">Offerings</a>
         <a href="index.html#services">Services</a>
         <a href="about.html">About</a>
         <a href="blog/">Blog</a>
         <a href="faq.html">FAQ</a>
-        <a class="nav-cta" href="contact.html">Talk to us</a>
+        <a class="nav-cta" href="contact.html" data-track="nav_cta">Free readiness call</a>
       </div>
     </div>
   </nav>
 
   <header class="hero" id="top">
-    <p class="eyebrow">An Atlas Technology Solutions offering</p>
+    <p class="eyebrow">For small businesses · An Atlas Technology Solutions offering</p>
     <h1>AI that works<br><span class="grad">where you work.</span></h1>
     <p class="lead">
-      Atlas AI brings artificial intelligence into the tools and systems your business
-      already runs on — integrations, agentic workflows, training, and security,
+      Atlas AI helps small businesses adopt AI without ripping out the tools your team
+      already knows — integrations, agentic workflows, training, and security,
       delivered by the Carolinas&rsquo; trusted Apple&#8209;certified IT experts.
     </p>
     <div class="btn-row">
-      <a class="btn btn-primary" href="contact.html">Start the conversation</a>
+      <a class="btn btn-primary" href="contact.html" data-track="hero_cta">Book a free readiness call</a>
       <a class="btn btn-ghost" href="#services">Explore services</a>
     </div>
   </header>
@@ -106,8 +111,93 @@
 
 
   <figure class="art-full">
-    <img src="assets/img/atlas-ai-horizon-hero.jpg" alt="Blue and violet light rising over a dark horizon — Atlas AI brand artwork representing AI illuminating business technology" width="1600" height="760" loading="lazy" decoding="async">
+    <img src="assets/img/atlas-ai-horizon-hero.jpg" alt="Blue and violet light rising over a dark horizon — Atlas AI brand artwork representing AI illuminating business technology" width="1600" height="760" loading="eager" fetchpriority="high" decoding="async">
   </figure>
+
+  <section class="section-alt" id="story">
+    <div class="wrap prose reveal">
+      <p class="kicker">Built for owners, not hobbyists</p>
+      <h2>You don&rsquo;t need a data science team.<br>You need AI that shows up in Monday&rsquo;s inbox.</h2>
+      <p>
+        Most small businesses we talk to aren&rsquo;t asking for &ldquo;AI strategy&rdquo; decks — they&rsquo;re
+        asking whether AI can actually save time on email, tickets, proposals, and reports without
+        creating a security mess. That&rsquo;s the work we do.
+      </p>
+      <p>
+        Atlas AI grew out of Atlas Technology Solutions, the Davidson&#8209;based consultancy that has
+        managed IT, secured networks, and deployed Apple fleets for Carolinas businesses since 2018.
+        When AI arrived, our clients had the same question every owner asks: <em>where does this help
+        us first, and how do we do it safely?</em> We built a practice to answer both — scoped projects,
+        plain&#8209;English guidance, and implementations your team can actually use.
+      </p>
+      <p>
+        We work with companies typically between 10 and 150 people — professional services, trades,
+        healthcare&#8209;adjacent offices, nonprofits, and growing teams that need enterprise discipline
+        without enterprise overhead. <a href="about.html">Read our full story&nbsp;›</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="offerings">
+    <div class="wrap">
+      <p class="kicker reveal">Start here</p>
+      <h2 class="reveal">Offerings designed for small business budgets and timelines.</h2>
+      <p class="sub reveal">
+        Each offering is scoped, priced up front, and aimed at
+        a measurable outcome — then you decide what comes next.
+      </p>
+      <div class="offerings">
+        <article class="offering featured reveal">
+          <span class="badge">Funnel start · Free</span>
+          <h3>AI Readiness Call</h3>
+          <p class="price-hint">30 minutes · remote · no obligation</p>
+          <p>A working conversation about your tools, bottlenecks, and where AI pays off first. You leave with honest guidance whether or not we work together.</p>
+          <ul>
+            <li>Map of your highest&#8209;value AI opportunities</li>
+            <li>Security and policy red flags to watch</li>
+            <li>Suggested first project if there&rsquo;s a fit</li>
+          </ul>
+          <a class="btn btn-primary" href="contact.html?interest=readiness-call" data-track="offering_readiness">Book your free call</a>
+        </article>
+        <article class="offering reveal">
+          <span class="badge">Training</span>
+          <h3>Team AI Workshop</h3>
+          <p class="price-hint">Half&#8209;day · on&#8209;site or remote · scoped per team</p>
+          <p>Hands&#8209;on training that turns AI from a buzzword into a daily skill — practical prompting, safe use, and workflows tied to each role.</p>
+          <ul>
+            <li>Executive or all&#8209;staff formats</li>
+            <li>Your real tools and scenarios</li>
+            <li>Takeaway playbooks for each role</li>
+          </ul>
+          <a class="btn btn-ghost" href="ai-training.html" data-track="offering_training">Explore AI training</a>
+        </article>
+        <article class="offering reveal">
+          <span class="badge">Integration</span>
+          <h3>First Integration Sprint</h3>
+          <p class="price-hint">Fixed scope · typically 2–4 weeks</p>
+          <p>One high&#8209;value workflow wired into software you already run — email, help desk, CRM, or documents — with security review built in.</p>
+          <ul>
+            <li>Tool audit and opportunity shortlist</li>
+            <li>Build, test, and staged rollout</li>
+            <li>Before/after time measurement</li>
+          </ul>
+          <a class="btn btn-ghost" href="ai-integrations.html" data-track="offering_integration">See AI integrations</a>
+        </article>
+        <article class="offering reveal">
+          <span class="badge">Governance</span>
+          <h3>Policy &amp; Security Starter</h3>
+          <p class="price-hint">Scoped package · policy + technical review</p>
+          <p>For teams already using AI informally — a plain&#8209;English policy, vendor review, and controls so innovation doesn&rsquo;t outpace security.</p>
+          <ul>
+            <li>Acceptable&#8209;use policy draft</li>
+            <li>Shadow&#8209;AI inventory guidance</li>
+            <li>Security checklist for AI tools</li>
+          </ul>
+          <a class="btn btn-ghost" href="ai-policy.html" data-track="offering_policy">Explore AI policy</a>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <section class="center reveal">
     <div class="wrap">
@@ -124,7 +214,7 @@
   <section class="section-alt" id="services">
     <div class="wrap">
       <p class="kicker reveal">What we do</p>
-      <h2 class="reveal">Five ways we put AI to work for you.</h2>
+      <h2 class="reveal">Six ways we put AI to work for your business.</h2>
       <p class="sub reveal">From the first integration to a fully governed AI practice — each service stands alone, and they&rsquo;re stronger together. Every card opens a full deep&#8209;dive.</p>
       <div class="cards">
         <article class="card reveal">
@@ -173,6 +263,53 @@
     </div>
   </section>
 
+  <section class="band" id="testimonials">
+    <div class="wrap">
+      <p class="kicker reveal">From the field</p>
+      <h2 class="reveal">What small business leaders tell us.</h2>
+      <p class="sub reveal">
+        Representative feedback from client engagements — replace these with approved quotes as you
+        collect them. Email us to request a reference call.
+      </p>
+      <div class="testimonials">
+        <article class="testimonial reveal">
+          <blockquote>
+            &ldquo;We were pasting client emails into random chatbots because it was faster than
+            writing from scratch. Atlas wired AI into our help desk so drafting happens where we
+            already work — and our team actually uses it.&rdquo;
+          </blockquote>
+          <footer>
+            <strong>Operations lead</strong>
+            Professional services firm · ~35 employees · Charlotte area
+          </footer>
+        </article>
+        <article class="testimonial reveal">
+          <blockquote>
+            &ldquo;The workshop was the first time my team understood what they could and couldn&rsquo;t
+            do with AI. Nobody felt sold to — they left with playbooks for their own jobs.&rdquo;
+          </blockquote>
+          <footer>
+            <strong>Business owner</strong>
+            Home services company · ~20 employees · Carolinas
+          </footer>
+        </article>
+        <article class="testimonial reveal">
+          <blockquote>
+            &ldquo;We had shadow AI everywhere and no rules. The policy and security review gave us a
+            path forward that didn&rsquo;t feel like shutting innovation down.&rdquo;
+          </blockquote>
+          <footer>
+            <strong>Office manager</strong>
+            Healthcare&#8209;adjacent practice · ~45 employees · NC
+          </footer>
+        </article>
+      </div>
+      <p class="testimonial-note reveal">
+        Have you worked with Atlas AI? <a href="contact.html">We&rsquo;d love to feature your story</a> — with your approval first.
+      </p>
+    </div>
+  </section>
+
   <section class="band" id="why">
     <div class="wrap">
       <p class="kicker reveal">Why Atlas AI</p>
@@ -205,7 +342,7 @@
   <section class="section-alt" id="process">
     <div class="wrap">
       <p class="kicker reveal">How an engagement works</p>
-      <h2 class="reveal">Scoped projects. Measured results.<br>No open-ended retainers to start.</h2>
+      <h2 class="reveal">Scoped projects. Measured results.<br>Clear proposals before we begin.</h2>
       <p class="sub reveal">Every engagement follows the same disciplined arc — and starts with a conversation that costs nothing.</p>
       <div class="steps">
         <div class="step reveal"><h3>Discover</h3><p>A working session on your tools, bottlenecks, and goals. We leave with a map of where AI pays off fastest in your business.</p></div>
@@ -230,6 +367,63 @@
     </div>
   </section>
 
+  <section class="section-alt" id="team-teaser">
+    <div class="wrap">
+      <p class="kicker reveal">Actual people</p>
+      <h2 class="reveal">You&rsquo;ll work with the Atlas team — not a chatbot.</h2>
+      <p class="sub reveal">
+        Same engineers and operators who run IT for Carolinas businesses — based in Davidson and Charlotte, NC.
+      </p>
+      <div class="staff-grid teaser">
+        <article class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="assets/img/team/chad-keith.jpg" alt="Chad Keith, Founder" width="240" height="240" loading="lazy" decoding="async">
+          </div>
+          <h3>Chad Keith</h3>
+          <p class="role">Founder</p>
+        </article>
+        <article class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="assets/img/team/grayson-berkowitz.jpg" alt="Grayson Berkowitz" width="240" height="240" loading="lazy" decoding="async">
+          </div>
+          <h3>Grayson Berkowitz</h3>
+          <p class="role">Systems Engineer</p>
+        </article>
+        <article class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="assets/img/team/molly-hoffman.jpg" alt="Molly Hoffman" width="240" height="240" loading="lazy" decoding="async">
+          </div>
+          <h3>Molly Hoffman</h3>
+          <p class="role">Administration</p>
+        </article>
+        <article class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="assets/img/team/john-blake-macmanamy.jpg" alt="John Blake MacManamy" width="240" height="240" loading="lazy" decoding="async">
+          </div>
+          <h3>John Blake MacManamy</h3>
+          <p class="role">Systems Admin</p>
+        </article>
+        <article class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="assets/img/team/justin-montgomery.jpg" alt="Justin Montgomery" width="240" height="240" loading="lazy" decoding="async">
+          </div>
+          <h3>Justin Montgomery</h3>
+          <p class="role">Systems Admin</p>
+        </article>
+        <article class="staff-card reveal">
+          <div class="staff-photo-wrap">
+            <img src="assets/img/team/kimberly-keith.jpg" alt="Kimberly Keith" width="240" height="240" loading="lazy" decoding="async">
+          </div>
+          <h3>Kimberly Keith</h3>
+          <p class="role">Community Relations</p>
+        </article>
+      </div>
+      <div class="btn-row reveal" style="margin-top:32px;">
+        <a class="btn btn-ghost" href="team.html" data-track="team_meet">Meet the team &amp; LinkedIn profiles</a>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-band" id="contact">
     <div class="wrap">
       <p class="kicker reveal">Let&rsquo;s talk</p>
@@ -239,7 +433,7 @@
         and if we&rsquo;re a fit, a clear first step.
       </p>
       <div class="btn-row reveal">
-        <a class="btn btn-primary" href="contact.html">Contact us</a>
+        <a class="btn btn-primary" href="contact.html" data-track="footer_cta">Book a free readiness call</a>
         <a class="btn btn-ghost" href="mailto:consulting@atlascarolina.com?subject=AI%20Consulting%20Inquiry">Email consulting@atlascarolina.com</a>
       </div>
     </div>
@@ -262,9 +456,11 @@
           <h4>Company</h4>
           <ul>
             <li><a href="about.html">About Atlas</a></li>
+            <li><a href="team.html">Our team</a></li>
           <li><a href="blog/">Blog</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
             <li><a href="https://www.atlascarolina.com/">atlascarolina.com</a></li>
           </ul>
         </div>
