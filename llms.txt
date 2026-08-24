@@ -33,6 +33,7 @@
 - AI Security: https://ai.atlastechnology.solutions/ai-security.html
 - AI Policy Creation: https://ai.atlastechnology.solutions/ai-policy.html
 - About: https://ai.atlastechnology.solutions/about.html
+- Team: https://ai.atlastechnology.solutions/team.html
 - FAQ: https://ai.atlastechnology.solutions/faq.html
 - Contact: https://ai.atlastechnology.solutions/contact.html
 - Privacy: https://ai.atlastechnology.solutions/privacy.html
