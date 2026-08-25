@@ -72,7 +72,13 @@
     })(window, document, 'clarity', 'script', id);
   }
 
-  if (cfg.gaMeasurementId) loadGA4(cfg.gaMeasurementId);
+  // Official gtag snippet in <head> is the loader. Reuse it for funnel events.
+  // Fall back to site-config.js only when the head tag is not present.
+  if (typeof window.gtag === 'function') {
+    gtagReady = true;
+  } else if (cfg.gaMeasurementId) {
+    loadGA4(cfg.gaMeasurementId);
+  }
   if (cfg.clarityProjectId) loadClarity(cfg.clarityProjectId);
 
   // ---------- Form state from query params ----------
