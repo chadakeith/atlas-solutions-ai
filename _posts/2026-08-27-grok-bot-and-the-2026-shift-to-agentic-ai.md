@@ -3,11 +3,16 @@ layout: post
 title: "Grok Bot and the 2026 shift to agentic AI"
 description: "xAI's Grok Bot gives each agent its own cloud computer and real tool access—not just chat. What power users report, what to watch, and how MSPs and operations teams should pilot computer-use agents safely."
 author: "Atlas AI"
-image: "/assets/img/agentic-workflows-light-trails.jpg"
-image_alt: "Parallel trails of blue and violet light on black — multiple agentic workflows running in parallel"
+image: "/assets/img/blog/blog-grok-bot-hero.jpg"
+image_alt: "Grok Bot editorial hero — glowing agent desktops and parallel task windows on a dark background"
 reading_time: "7 min read"
 keywords: "Grok Bot, agentic AI, computer use agents, xAI, MSP AI, operations automation, AI governance 2026"
 ---
+
+<div class="post-brand-row" role="group" aria-label="Grok Bot branding">
+  <img src="/assets/img/blog/grok-logo-official.png" alt="Grok AI logo" width="72" height="87" decoding="async">
+  <p class="post-brand-copy"><strong>Grok Bot</strong> by xAI — agentic AI with a real computer, not just a chat box.<span>Logo © xAI / Grok. Used here for editorial identification only — Atlas AI is not affiliated with or endorsed by xAI.</span></p>
+</div>
 
 Grok Bot is the clearest signal yet that AI has moved from “answer my question” to “do the work.” That shift—[agentic AI](/agentic-workflows.html) with real computer access—is the dominant 2026 trend, and it matters whether you run an MSP, an IT shop, or any operations-heavy small business.
 
@@ -15,9 +20,19 @@ Grok Bot is the clearest signal yet that AI has moved from “answer my question
 
 xAI launched **Grok Bot** (@bot) in early beta in mid-August 2026. It is **not** the same as conversational Grok in a chat window.
 
+<figure class="post-figure">
+  <img src="/assets/img/blog/blog-chat-vs-agent.jpg" alt="Split graphic: chat answers on the left versus an agent running a full desktop of tasks on the right" width="1600" height="1067" loading="lazy" decoding="async">
+  <figcaption>Chat answers questions. Agents finish work — the core product difference behind Grok Bot.</figcaption>
+</figure>
+
 Each bot gets its own cloud computer. It logs into your actual tools the way a person would, runs multi-step work, and only comes back when it needs a decision or approval. You can run several in parallel. SuperGrok and Cursor Pro users now have access; limits were recently reset.
 
 In plain terms: this is a **computer-use agent**—the category we described in [What is an agentic workflow?](/blog/2026/what-is-an-agentic-workflow/)—packaged as a teammate you talk to, not a prompt you engineer.
+
+<figure class="post-figure">
+  <img src="/assets/img/blog/grok-bot-mark.png" alt="Stylized G monogram mark inspired by Grok’s branding, used as editorial illustration" width="320" height="320" loading="lazy" decoding="async" style="width:min(220px,40%);margin:28px auto;background:#000;border-radius:28px;padding:18px;">
+  <figcaption>Editorial mark for this article — not an official xAI product asset.</figcaption>
+</figure>
 
 ## What people on X are actually saying
 

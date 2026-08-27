@@ -391,6 +391,24 @@ footer a:hover { color: var(--ink); }
   background: var(--bg-alt); border-radius: 6px; padding: 2px 7px;
   font-size: 15px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
+.post-body .post-figure {
+  margin: 28px 0 32px; background: #000; border-radius: 16px; overflow: hidden;
+}
+.post-body .post-figure img { display: block; width: 100%; height: auto; }
+.post-body .post-figure figcaption {
+  padding: 12px 16px 14px; font-size: 13px; line-height: 1.4; color: #a1a1a6; background: #111;
+}
+.post-brand-row {
+  display: flex; align-items: center; gap: 18px; margin: 8px 0 28px;
+  padding: 16px 18px; border-radius: 16px; background: #0a0a0a;
+}
+.post-brand-row img {
+  width: 72px; height: 72px; object-fit: contain; flex-shrink: 0;
+  background: #fff; border-radius: 14px; padding: 8px;
+}
+.post-brand-row .post-brand-copy { color: #d2d2d7; font-size: 15px; line-height: 1.45; margin: 0; }
+.post-brand-row .post-brand-copy strong { color: #f5f5f7; }
+.post-brand-row .post-brand-copy span { display: block; color: #86868b; font-size: 13px; margin-top: 4px; }
 
 /* ---------- Offerings (SMB packages) ---------- */
 .offerings { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; }
