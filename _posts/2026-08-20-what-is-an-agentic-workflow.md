@@ -40,3 +40,5 @@ Here's the honest part. An agent that can act is an agent that can act *wrongly*
 The best first agent is boring. Look for a process that's **repetitive** (happens daily), **rule-based** (you could write the decision tree on a whiteboard), and **measurable** (you'll know if it's working). Inbox triage, report assembly, appointment follow-ups, document intake — these are the sweet spots. Save the ambitious ideas for agent number three.
 
 We [design and build agentic workflows](/agentic-workflows.html) exactly this way: map the real process, design the guardrails on paper, run in shadow mode, then expand autonomy step by step. If there's a process quietly eating your team's week, [tell us about it](/contact.html) — we'll give you an honest read on whether an agent should own it.
+
+For a current example of computer-use agents entering production conversations, see our post on [Grok Bot and the 2026 shift to agentic AI](/blog/2026/grok-bot-and-the-2026-shift-to-agentic-ai/).

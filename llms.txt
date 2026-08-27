@@ -41,7 +41,8 @@
 - FAQ: https://ai.atlastechnology.solutions/faq.html
 - Contact: https://ai.atlastechnology.solutions/contact.html
 - Privacy: https://ai.atlastechnology.solutions/privacy.html
-- Blog: https://ai.atlastechnology.solutions/blog/ (RSS: https://ai.atlastechnology.solutions/feed.xml)
+- Blog: https://atlassolutions.tech/blog/ (RSS: https://atlassolutions.tech/feed.xml)
+  - Grok Bot and the 2026 shift to agentic AI (2026-08-27): https://atlassolutions.tech/blog/2026/grok-bot-and-the-2026-shift-to-agentic-ai/
 
 ## Contact
 
