@@ -39,23 +39,33 @@ nav.top {
 .nav-inner {
   max-width: var(--maxw); margin: 0 auto; padding: 0 22px;
   display: flex; align-items: center; justify-content: space-between;
-  height: 48px;
+  height: 56px;
 }
 .nav-logo {
-  display: flex; align-items: center;
+  display: flex; align-items: center; gap: 10px;
   flex-shrink: 0;
-  padding-right: 8px;
+  padding-right: 10px;
   text-decoration: none;
 }
 .nav-logo:hover { text-decoration: none; }
 .nav-mark {
   display: block;
-  height: 36px;
+  height: 48px;
   width: auto;
-  max-width: 48px;
+  max-width: 56px;
   object-fit: contain;
   object-position: left center;
   flex-shrink: 0;
+}
+.nav-ai {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .nav-links { display: flex; gap: 26px; align-items: center; }
 .nav-links a { color: rgba(245,245,247,0.85); font-size: 13px; }
@@ -85,7 +95,7 @@ nav.top {
   .nav-toggle { display: block; }
   .nav-inner { position: relative; }
   .nav-links {
-    display: none; position: absolute; top: 48px; left: 0; right: 0;
+    display: none; position: absolute; top: 56px; left: 0; right: 0;
     background: rgba(0,0,0,0.96); flex-direction: column; align-items: stretch;
     padding: 8px 22px 20px; gap: 0; border-top: 1px solid #333336;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
