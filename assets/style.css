@@ -42,18 +42,19 @@ nav.top {
   height: 48px;
 }
 .nav-logo {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 17px; font-weight: 600; color: #f5f5f7; letter-spacing: -0.2px;
+  display: flex; align-items: center;
+  flex-shrink: 0;
+  padding-right: 8px;
   text-decoration: none;
 }
 .nav-logo:hover { text-decoration: none; }
-.nav-mark { display: block; height: 34px; width: auto; flex-shrink: 0; }
-.nav-ai {
-  background: var(--grad);
-  -webkit-background-clip: text; background-clip: text; color: transparent;
-  font-weight: 700; letter-spacing: -0.02em;
+.nav-mark {
+  display: block;
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
 }
-.nav-logo span:not(.nav-ai) { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .nav-links { display: flex; gap: 26px; align-items: center; }
 .nav-links a { color: rgba(245,245,247,0.85); font-size: 13px; }
 .nav-links a:hover { color: #fff; text-decoration: none; }
