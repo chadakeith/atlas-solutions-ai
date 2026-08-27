@@ -8,14 +8,14 @@
 ## What Atlas AI offers
 
 - AI Readiness Call (free 30-minute consultation for small businesses)
-- Team AI Workshop (hands-on training, half-day formats)
+- Team AI Workshop (hands-on corporate training, half-day and multi-session formats)
 - First Integration Sprint (scoped AI integration into existing tools)
 - Policy & Security Starter (governance + technical review package)
 - AI Integrations: connecting AI to the tools and software systems a business
   already uses (email, ticketing, CRM, documents, scheduling).
 - Agentic Workflows: designing and building AI agents that execute multi-step
   business processes with human checkpoints.
-- AI Training: hands-on workshops and leadership briefings for teams adopting AI.
+- AI Training: corporate AI training, hands-on workshops, leadership briefings, and role playbooks for teams adopting AI.
 - AI Security: data governance, access control, vendor evaluation, and safe AI
   deployment, backed by an established cybersecurity practice.
 - AI Policy Creation: practical acceptable-use and governance policies for AI
@@ -33,7 +33,11 @@
 - AI Security: https://ai.atlastechnology.solutions/ai-security.html
 - AI Policy Creation: https://ai.atlastechnology.solutions/ai-policy.html
 - About: https://ai.atlastechnology.solutions/about.html
-- Team: https://ai.atlastechnology.solutions/team.html
+- Team: https://atlassolutions.tech/team.html
+- Case studies: https://atlassolutions.tech/case-studies/
+  - Help desk AI drafting: https://atlassolutions.tech/case-studies/help-desk-ai-drafting.html
+  - Corporate AI training: https://atlassolutions.tech/case-studies/corporate-ai-training.html
+  - AI policy rollout: https://atlassolutions.tech/case-studies/ai-policy-governance.html
 - FAQ: https://ai.atlastechnology.solutions/faq.html
 - Contact: https://ai.atlastechnology.solutions/contact.html
 - Privacy: https://ai.atlastechnology.solutions/privacy.html
