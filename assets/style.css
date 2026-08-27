@@ -57,6 +57,19 @@ nav.top {
   object-position: left center;
   flex-shrink: 0;
 }
+.nav-word {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #f5f5f7;
+}
+.nav-brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.28em;
+  white-space: nowrap;
+}
 .nav-ai {
   font-size: 22px;
   font-weight: 700;
