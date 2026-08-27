@@ -2,6 +2,7 @@ title: Atlas AI
 description: AI integrations, agentic workflows, training, security, and policy from Atlas Technology Solutions.
 url: "https://atlassolutions.tech"
 timezone: America/New_York
+future: true
 
 permalink: /blog/:year/:title/
 
