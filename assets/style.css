@@ -409,6 +409,16 @@ footer a:hover { color: var(--ink); }
 .post-brand-row .post-brand-copy { color: #d2d2d7; font-size: 15px; line-height: 1.45; margin: 0; }
 .post-brand-row .post-brand-copy strong { color: #f5f5f7; }
 .post-brand-row .post-brand-copy span { display: block; color: #86868b; font-size: 13px; margin-top: 4px; }
+.post-body .post-figure.post-figure--mark {
+  background: transparent; text-align: center; margin: 8px 0 28px;
+}
+.post-body .post-figure.post-figure--mark img {
+  width: min(200px, 42%); margin: 0 auto; background: #000;
+  border-radius: 28px; padding: 18px;
+}
+.post-body .post-figure.post-figure--mark figcaption {
+  background: transparent; color: var(--ink-soft); padding: 10px 0 0;
+}
 
 /* ---------- Offerings (SMB packages) ---------- */
 .offerings { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; }

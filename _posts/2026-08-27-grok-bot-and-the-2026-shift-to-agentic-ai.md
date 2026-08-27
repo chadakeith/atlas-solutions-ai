@@ -29,8 +29,8 @@ Each bot gets its own cloud computer. It logs into your actual tools the way a p
 
 In plain terms: this is a **computer-use agent**—the category we described in [What is an agentic workflow?](/blog/2026/what-is-an-agentic-workflow/)—packaged as a teammate you talk to, not a prompt you engineer.
 
-<figure class="post-figure">
-  <img src="/assets/img/blog/grok-bot-mark.png" alt="Stylized G monogram mark inspired by Grok’s branding, used as editorial illustration" width="320" height="320" loading="lazy" decoding="async" style="width:min(220px,40%);margin:28px auto;background:#000;border-radius:28px;padding:18px;">
+<figure class="post-figure post-figure--mark">
+  <img src="/assets/img/blog/grok-bot-mark.png" alt="Stylized G monogram mark inspired by Grok’s branding, used as editorial illustration" width="320" height="320" loading="lazy" decoding="async">
   <figcaption>Editorial mark for this article — not an official xAI product asset.</figcaption>
 </figure>
 
