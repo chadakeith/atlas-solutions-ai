@@ -54,7 +54,9 @@
 ## Key facts
 
 - Founded: 2018 (Atlas Technology Solutions)
-- Certifications: Apple Certified Support Professional, Apple Deployment &
+- Certifications: MasterClass AI Fundamentals (Chad Keith, Aug 2026 —
+  verify: https://certificates.masterclass.com/check/BFF5034638C7949F4E40E9536FA2FFFA53EB0EFE1E6D95CE984D425116C87378MHJSS3pPYit0UGZJSEhnSm05YVNQenlocTJMWHB1L2dFU0VBMklTS0hRcVZJdDRq),
+  Apple Certified Support Professional, Apple Deployment &
   Management, Jamf Certified Admin, Jamf Product Professional, Ubiquiti
   Enterprise Wireless Admin
 - Apple Consultants Network profile: https://consultants.apple.com/us/profile/5424771

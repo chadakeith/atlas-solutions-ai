@@ -323,6 +323,12 @@ a.card-link:hover { text-decoration: none; }
 .cred p { font-size: 15px; color: var(--ink-soft); margin-bottom: 10px; }
 .cred a { font-size: 15px; font-weight: 500; }
 .cred a::after { content: " ›"; }
+.cred a.cred-media {
+  display: block; margin-top: 14px; border-radius: 12px; overflow: hidden;
+  background: #111; line-height: 0;
+}
+.cred a.cred-media::after { content: none; }
+.cred a.cred-media img { display: block; width: 100%; height: auto; }
 .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
 .pill {
   font-size: 13px; font-weight: 500; color: var(--ink-soft);
