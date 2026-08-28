@@ -38,3 +38,5 @@ There's one more reason to do this now rather than later: your clients are start
 ## Where to start
 
 Start with the inventory. It's fast, it's eye-opening, and every other decision gets easier once you can see the real picture. That's typically the first thing we do in an [AI security review](/ai-security.html) — and if you'd rather just talk it through first, [that conversation is free](/contact.html).
+
+For a current example of how AI governance is colliding with vendor risk and national policy, see [Pentagon’s Anthropic blacklist ruled illegal](/blog/2026/pentagon-anthropic-blacklist-ai-governance/).

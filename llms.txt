@@ -42,6 +42,7 @@
 - Contact: https://ai.atlastechnology.solutions/contact.html
 - Privacy: https://ai.atlastechnology.solutions/privacy.html
 - Blog: https://atlassolutions.tech/blog/ (RSS: https://atlassolutions.tech/feed.xml)
+  - Pentagon’s Anthropic blacklist ruled illegal (2026-08-28): https://atlassolutions.tech/blog/2026/pentagon-anthropic-blacklist-ai-governance/
   - Grok Bot and the 2026 shift to agentic AI (2026-08-27): https://atlassolutions.tech/blog/2026/grok-bot-and-the-2026-shift-to-agentic-ai/
 
 ## Contact
