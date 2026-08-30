@@ -329,6 +329,10 @@ a.card-link:hover { text-decoration: none; }
 }
 .cred a.cred-media::after { content: none; }
 .cred a.cred-media img { display: block; width: 100%; height: auto; }
+.cred a.cred-media.cred-badge {
+  width: 140px; background: transparent; border-radius: 0;
+}
+.cred a.cred-media.cred-badge img { width: 140px; height: auto; }
 .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
 .pill {
   font-size: 13px; font-weight: 500; color: var(--ink-soft);
