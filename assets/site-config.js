@@ -9,5 +9,5 @@ window.ATLAS_SITE = {
   /** Microsoft Clarity project ID (Settings → Overview). Free session replay + heatmaps. */
   clarityProjectId: '',
 
-  siteUrl: 'https://ai.atlastechnology.solutions',
+  siteUrl: 'https://atlassolutions.tech',
 };

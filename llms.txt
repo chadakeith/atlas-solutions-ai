@@ -26,21 +26,21 @@
 
 ## Site pages
 
-- Home: https://ai.atlastechnology.solutions/
-- AI Integrations: https://ai.atlastechnology.solutions/ai-integrations.html
-- Agentic Workflows: https://ai.atlastechnology.solutions/agentic-workflows.html
-- AI Training: https://ai.atlastechnology.solutions/ai-training.html
-- AI Security: https://ai.atlastechnology.solutions/ai-security.html
-- AI Policy Creation: https://ai.atlastechnology.solutions/ai-policy.html
-- About: https://ai.atlastechnology.solutions/about.html
+- Home: https://atlassolutions.tech/
+- AI Integrations: https://atlassolutions.tech/ai-integrations.html
+- Agentic Workflows: https://atlassolutions.tech/agentic-workflows.html
+- AI Training: https://atlassolutions.tech/ai-training.html
+- AI Security: https://atlassolutions.tech/ai-security.html
+- AI Policy Creation: https://atlassolutions.tech/ai-policy.html
+- About: https://atlassolutions.tech/about.html
 - Team: https://atlassolutions.tech/team.html
 - Case studies: https://atlassolutions.tech/case-studies/
   - Help desk AI drafting: https://atlassolutions.tech/case-studies/help-desk-ai-drafting.html
   - Corporate AI training: https://atlassolutions.tech/case-studies/corporate-ai-training.html
   - AI policy rollout: https://atlassolutions.tech/case-studies/ai-policy-governance.html
-- FAQ: https://ai.atlastechnology.solutions/faq.html
-- Contact: https://ai.atlastechnology.solutions/contact.html
-- Privacy: https://ai.atlastechnology.solutions/privacy.html
+- FAQ: https://atlassolutions.tech/faq.html
+- Contact: https://atlassolutions.tech/contact.html
+- Privacy: https://atlassolutions.tech/privacy.html
 - Blog: https://atlassolutions.tech/blog/ (RSS: https://atlassolutions.tech/feed.xml)
   - Pentagon’s Anthropic blacklist ruled illegal (2026-08-28): https://atlassolutions.tech/blog/2026/pentagon-anthropic-blacklist-ai-governance/
   - Grok Bot and the 2026 shift to agentic AI (2026-08-27): https://atlassolutions.tech/blog/2026/grok-bot-and-the-2026-shift-to-agentic-ai/
@@ -48,7 +48,7 @@
 ## Contact
 
 - Email: consulting@atlascarolina.com
-- Website: https://ai.atlastechnology.solutions/
+- Website: https://atlassolutions.tech/
 - Parent company: https://www.atlascarolina.com/
 - Location: Davidson, North Carolina, USA (serving Charlotte and the Carolinas)
 

@@ -42,7 +42,7 @@
     "url": "{{ site.url }}{{ page.url }}",
     {% if page.image %}"image": "{{ site.url }}{{ page.image }}",{% endif %}
     "author": {"@type": "Organization", "name": "{{ page.author | default: 'Atlas AI' }}"},
-    "publisher": {"@id": "https://ai.atlastechnology.solutions/#org"},
+    "publisher": {"@id": "https://atlassolutions.tech/#org"},
     "mainEntityOfPage": "{{ site.url }}{{ page.url }}"
   }
   </script>
@@ -83,7 +83,7 @@
       <form id="subscribe-form" class="subscribe-row reveal" action="https://formsubmit.co/consulting@atlascarolina.com" method="POST">
         <input type="hidden" name="_subject" value="Atlas AI blog subscriber">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://ai.atlastechnology.solutions/blog/?subscribed=1">
+        <input type="hidden" name="_next" value="https://atlassolutions.tech/blog/?subscribed=1">
         <label class="visually-hidden" for="blog-email">Email for new posts</label>
         <input id="blog-email" name="email" type="email" required placeholder="Get new posts by email" autocomplete="email">
         <button type="submit" data-track="blog_subscribe">Subscribe</button>
