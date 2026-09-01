@@ -1,15 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://atlassolutions.tech/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://atlassolutions.tech/ai-integrations.html</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://atlassolutions.tech/agentic-workflows.html</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://atlassolutions.tech/ai-training.html</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://atlassolutions.tech/ai-security.html</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://atlassolutions.tech/ai-policy.html</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://atlassolutions.tech/about.html</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://atlassolutions.tech/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-skyline.jpg</image:loc>
+      <image:title>Woman at a laptop with the Duke Energy Center in the window at Shared Space, Charlotte</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-meeting-mac.jpg</image:loc>
+      <image:title>Two professionals meeting with a MacBook at Shared Space, Charlotte</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-office-skyline-team.jpg</image:loc>
+      <image:title>Three professionals in an open Charlotte coworking office with a skyline view</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://atlassolutions.tech/ai-integrations.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-meeting-mac.jpg</image:loc>
+      <image:title>Consulting conversation over a MacBook at Shared Space, Charlotte</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://atlassolutions.tech/agentic-workflows.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-collaboration.jpg</image:loc>
+      <image:title>Two people collaborating on tablet computers in a Charlotte coworking space</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://atlassolutions.tech/ai-training.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-laptop-lounge.jpg</image:loc>
+      <image:title>Professional working on a laptop in the lounge at Shared Space, Charlotte</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://atlassolutions.tech/ai-security.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-office-skyline-team.jpg</image:loc>
+      <image:title>Open coworking office in Charlotte with three people at desks</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://atlassolutions.tech/ai-policy.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-woman-laptop-skyline.jpg</image:loc>
+      <image:title>Laptop work beside Charlotte-area windows at Shared Space coworking</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://atlassolutions.tech/about.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-desk-skyline.jpg</image:loc>
+      <image:title>Man and woman at a shared desk overlooking the Charlotte skyline</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-collaboration.jpg</image:loc>
+      <image:title>Collaborative work at Shared Space, Charlotte</image:title>
+    </image:image>
+  </url>
   <url><loc>https://atlassolutions.tech/team.html</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://atlassolutions.tech/faq.html</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://atlassolutions.tech/contact.html</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url>
+    <loc>https://atlassolutions.tech/contact.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://atlassolutions.tech/assets/img/charlotte-coworking-woman-laptop-skyline.jpg</image:loc>
+      <image:title>Woman at a laptop facing the Charlotte skyline from Shared Space coworking</image:title>
+    </image:image>
+  </url>
   <url><loc>https://atlassolutions.tech/privacy.html</loc><lastmod>2026-08-24</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://atlassolutions.tech/case-studies/</loc><lastmod>2026-08-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://atlassolutions.tech/case-studies/help-desk-ai-drafting.html</loc><lastmod>2026-08-27</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
