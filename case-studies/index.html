@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      if (/\/index\.html$/i.test(location.pathname)) {
+        location.replace(location.pathname.replace(/\/index\.html$/i, '/') + location.search + location.hash);
+      }
+    })();
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5S03D0EE7"></script>
   <script>
@@ -51,7 +58,7 @@
 
   <nav class="top" aria-label="Primary">
     <div class="nav-inner">
-      <a class="nav-logo" href="../index.html" aria-label="Atlas AI home">
+      <a class="nav-logo" href="/" aria-label="Atlas AI home">
         <img class="nav-mark" src="../assets/img/brand/atlas-icon.png" alt="" height="48" decoding="async">
         <span class="nav-brand"><span class="nav-word">Atlas</span> <span class="nav-ai">AI</span></span>
       </a>
@@ -59,8 +66,8 @@
         <span class="nav-toggle-icon" aria-hidden="true"></span>
       </button>
       <div class="nav-links" id="nav-menu">
-        <a href="../index.html#offerings">Offerings</a>
-        <a href="../index.html#services">Services</a>
+        <a href="/#offerings">Offerings</a>
+        <a href="/#services">Services</a>
         <a href="../about.html">About</a>
         <a href="../blog/">Blog</a>
         <a href="../faq.html">FAQ</a>
@@ -71,7 +78,7 @@
 
   <header class="page-hero">
     <div class="wrap">
-      <p class="crumbs"><a href="../index.html">Atlas AI</a> / Case studies</p>
+      <p class="crumbs"><a href="/">Atlas AI</a> / Case studies</p>
       <h1>How businesses put AI to work — <span class="grad">in the real world.</span></h1>
       <p class="lead">
         Scoped projects, measurable outcomes, and plain&#8209;English lessons from Atlas AI engagements

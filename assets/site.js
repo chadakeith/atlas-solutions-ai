@@ -1,6 +1,13 @@
 (function () {
   'use strict';
 
+  // GitHub Pages serves directory indexes at both /path/ and /path/index.html (HTTP 200).
+  // Collapse the filename URL so users and JS-capable crawlers land on the slash form.
+  if (/\/index\.html$/i.test(location.pathname)) {
+    location.replace(location.pathname.replace(/\/index\.html$/i, '/') + location.search + location.hash);
+    return;
+  }
+
   const cfg = window.ATLAS_SITE || {};
 
   // ---------- Mobile navigation ----------

@@ -12,6 +12,8 @@ GitHub Pages deploys automatically on every push to the published branch.
 
 `index.html` at the repo root is the homepage. Other `.html` files are served at their paths. The blog uses Jekyll (built into GitHub Pages).
 
+The public homepage URL is **`https://atlassolutions.tech/`**. Internal links use `/` and `/#…`, never `index.html`. GitHub Pages cannot HTTP 301 `/index.html` → `/` because they are the same file — it returns 200 at both URLs. A small script in the homepage/`default` layout `<head>` and in `assets/site.js` client-redirects any `…/index.html` path to the slash URL and keeps the query string and hash (`/index.html#offerings` → `/#offerings`). For a true 301 (what Google Search Console prefers), put Cloudflare or another proxy in front with a redirect rule from `/index.html` to `/`. Hash fragments are not sent to the server; browsers keep them across that redirect.
+
 ## Repo layout
 
 | Path | Purpose |
