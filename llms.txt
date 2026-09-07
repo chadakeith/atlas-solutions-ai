@@ -22,7 +22,7 @@
   in the workplace.
 - Managed IT Services and Cybersecurity (via Atlas Technology Solutions).
 - Apple and Jamf device management: certified Jamf MSP, Integrator, and
-  Services Partner; member of the Apple Consultants Network.
+  Services Partner; Apple Technical Partner.
 
 ## Site pages
 
@@ -62,5 +62,5 @@
   Apple Certified Support Professional, Apple Deployment &
   Management, Jamf Certified Admin, Jamf Product Professional, Ubiquiti
   Enterprise Wireless Admin
-- Apple Consultants Network profile: https://consultants.apple.com/us/profile/5424771
+- Apple Technical Partner profile: https://partnernetwork.apple.com/us/partnerprofile/13144
 - Jamf partnership: https://www.partnerbase.com/atlas-technology-solutions/jamf
