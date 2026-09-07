@@ -1,6 +1,8 @@
 # Atlas AI Site
 
-The Atlas AI website ([ai.atlastechnology.solutions](https://ai.atlastechnology.solutions/)), hosted on **GitHub Pages** with push-to-publish deploys. Target audience: **small businesses** (typically 10–150 employees) seeking AI consulting, training, and integrations.
+The Atlas AI website ([atlassolutions.tech](https://atlassolutions.tech/)), hosted on **GitHub Pages** with push-to-publish deploys. Target audience: **small businesses** (typically 10–150 employees) seeking AI consulting, training, and integrations.
+
+**Preferred host is `https://atlassolutions.tech/`.** Do not point canonical, Open Graph, JSON-LD, sitemap, or `robots.txt` at `ai.atlastechnology.solutions` — that hostname 301s to atlassolutions.tech (Squarespace) and an older crawl that declared it as canonical is what GSC still shows as “Alternate page with proper canonical.”
 
 ## How hosting works (push to publish)
 
@@ -11,6 +13,8 @@ GitHub Pages deploys automatically on every push to the published branch.
 3. GitHub's **pages build and deployment** action runs (~30–60 s). Check the repo **Actions** tab.
 
 `index.html` at the repo root is the homepage. Other `.html` files are served at their paths. The blog uses Jekyll (built into GitHub Pages).
+
+The public homepage URL is **`https://atlassolutions.tech/`**. Internal links use `/` and `/#…`, never `index.html`. GitHub Pages cannot HTTP 301 `/index.html` → `/` because they are the same file — it returns 200 at both URLs. A small script in the homepage/`default` layout `<head>` and in `assets/site.js` client-redirects any `…/index.html` path to the slash URL and keeps the query string and hash (`/index.html#offerings` → `/#offerings`). For a true 301 (what Google Search Console prefers), put Cloudflare or another proxy in front with a redirect rule from `/index.html` to `/`. Hash fragments are not sent to the server; browsers keep them across that redirect.
 
 ## Repo layout
 
@@ -38,7 +42,7 @@ window.ATLAS_SITE = {
 };
 ```
 
-**Google Analytics 4** — create a property at [analytics.google.com](https://analytics.google.com), add a Web data stream for `ai.atlastechnology.solutions`, paste the Measurement ID.
+**Google Analytics 4** — create a property at [analytics.google.com](https://analytics.google.com), add a Web data stream for `atlassolutions.tech`, paste the Measurement ID.
 
 **Microsoft Clarity** — optional free session replay and heatmaps at [clarity.microsoft.com](https://clarity.microsoft.com).
 
@@ -83,7 +87,7 @@ Posts dated in the future won't publish until that date.
 To publish several times a week without manual copy-paste:
 
 1. **Source material** — your existing content (podcast notes, client FAQs, service pages), not trending X posts. Point agents at `llms.txt`, service pages, and prior `_posts/` for tone and facts.
-2. **RSS** — `https://ai.atlastechnology.solutions/feed.xml` for syndication; agents can also read `_posts/` in the repo directly.
+2. **RSS** — `https://atlassolutions.tech/feed.xml` for syndication; agents can also read `_posts/` in the repo directly.
 3. **Workflow** — agent drafts Markdown in `_posts/` with correct front matter, human reviews, then commit/push.
 4. **Images** — reuse `assets/img/` style or add new headers; always set `image` and `image_alt` in front matter.
 5. **Subscribe funnel** — blog footer includes an email subscribe form (FormSubmit → `consulting@atlascarolina.com`).

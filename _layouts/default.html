@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      if (/\/index\.html$/i.test(location.pathname)) {
+        location.replace(location.pathname.replace(/\/index\.html$/i, '/') + location.search + location.hash);
+      }
+    })();
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5S03D0EE7"></script>
   <script>
