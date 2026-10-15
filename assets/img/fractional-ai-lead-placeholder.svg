@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900" role="img" aria-labelledby="title desc">
+  <title id="title">Neutral placeholder</title>
+  <desc id="desc">Abstract placeholder for an Atlas Solutions photo that is not in the repository yet.</desc>
+  <defs>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a84ff"/>
+      <stop offset="0.55" stop-color="#6e5ff5"/>
+      <stop offset="1" stop-color="#bf5af2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="48%">
+      <stop offset="0" stop-color="#6e5ff5" stop-opacity="0.45"/>
+      <stop offset="0.45" stop-color="#0a84ff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1800" height="900" fill="#000"/>
+  <rect width="1800" height="900" fill="url(#glow)"/>
+  <g transform="translate(900 390)">
+    <rect x="-28" y="-210" width="56" height="420" rx="28" fill="url(#mark)" opacity="0.9"/>
+    <rect x="-210" y="-28" width="420" height="56" rx="28" fill="url(#mark)" opacity="0.9"/>
+  </g>
+  <text x="900" y="680" text-anchor="middle" fill="#a1a1a6" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="28" letter-spacing="3">PLACEHOLDER</text>
+</svg>
