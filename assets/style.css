@@ -333,6 +333,20 @@ a.card-link:hover { text-decoration: none; }
   width: 140px; background: transparent; border-radius: 0;
 }
 .cred a.cred-media.cred-badge img { width: 140px; height: auto; }
+/* Small OpenAI Academy course-badge row (home + about credentials). */
+.oai-badge-row {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+  margin: 2px 0 0;
+}
+.oai-badge-row a {
+  display: block; line-height: 0; flex: 0 0 auto;
+}
+.oai-badge-row a::after { content: none; }
+.oai-badge-row a:hover { text-decoration: none; }
+.oai-badge-row img {
+  display: block; width: 72px; height: 72px;
+}
+.cred:has(.oai-badge-row) { grid-column: 1 / -1; }
 .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
 .pill {
   font-size: 13px; font-weight: 500; color: var(--ink-soft);
