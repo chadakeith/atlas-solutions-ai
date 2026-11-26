@@ -347,6 +347,16 @@ a.card-link:hover { text-decoration: none; }
   display: block; width: 72px; height: 72px;
 }
 .cred:has(.oai-badge-row) { grid-column: 1 / -1; }
+/* Five 72px badges need 408px. Below that, 3 + 2 instead of a single leftover. */
+#backed-by .prose,
+.cred:has(.oai-badge-row) { container-type: inline-size; }
+@container (max-width: 407px) {
+  .oai-badge-row {
+    display: grid;
+    grid-template-columns: repeat(3, 72px);
+    width: max-content;
+  }
+}
 .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
 .pill {
   font-size: 13px; font-weight: 500; color: var(--ink-soft);
