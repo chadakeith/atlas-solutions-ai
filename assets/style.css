@@ -347,14 +347,21 @@ a.card-link:hover { text-decoration: none; }
   display: block; width: 72px; height: 72px;
 }
 .cred:has(.oai-badge-row) { grid-column: 1 / -1; }
-/* Five 72px badges need 408px. Below that, 3 + 2 instead of a single leftover. */
+/* Seven 72px badges need 576px on one line. Narrower: 4+3, then 3+2+2. */
 #backed-by .prose,
 .cred:has(.oai-badge-row) { container-type: inline-size; }
-@container (max-width: 407px) {
-  .oai-badge-row {
-    display: grid;
-    grid-template-columns: repeat(3, 72px);
-    width: max-content;
+@container (max-width: 575px) {
+  .oai-badge-row a:nth-child(4) {
+    margin-right: calc(100% - 4 * 72px - 3 * 12px);
+  }
+}
+@container (max-width: 323px) {
+  .oai-badge-row a:nth-child(4) { margin-right: 0; }
+  .oai-badge-row a:nth-child(3) {
+    margin-right: calc(100% - 3 * 72px - 2 * 12px);
+  }
+  .oai-badge-row a:nth-child(5) {
+    margin-right: calc(100% - 2 * 72px - 12px);
   }
 }
 .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
