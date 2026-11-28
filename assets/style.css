@@ -347,21 +347,26 @@ a.card-link:hover { text-decoration: none; }
   display: block; width: 72px; height: 72px;
 }
 .cred:has(.oai-badge-row) { grid-column: 1 / -1; }
-/* Eight 72px badges need 660px on one line. Narrower: 4+4, then 3+3+2. */
+/* Nine 72px badges need 744px on one line (ten would need 828px).
+   If that's tight, shrink to 64px (nine need 672px; ten, 748px) so
+   desktop Home stays one line. Narrower: 5+4 (5+5 with a tenth).
+   Tighter: 3 per line. */
 #backed-by .prose,
 .cred:has(.oai-badge-row) { container-type: inline-size; }
-@container (max-width: 659px) {
-  .oai-badge-row a:nth-child(4) {
-    margin-right: calc(100% - 4 * 72px - 3 * 12px);
+@container (max-width: 743px) {
+  .oai-badge-row img { width: 64px; height: 64px; }
+}
+@container (max-width: 671px) {
+  .oai-badge-row a:nth-child(5) {
+    margin-right: calc(100% - 5 * 64px - 4 * 12px);
   }
 }
-@container (max-width: 323px) {
-  .oai-badge-row a:nth-child(4) { margin-right: 0; }
-  .oai-badge-row a:nth-child(3) {
-    margin-right: calc(100% - 3 * 72px - 2 * 12px);
-  }
-  .oai-badge-row a:nth-child(6) {
-    margin-right: calc(100% - 3 * 72px - 2 * 12px);
+@container (max-width: 367px) {
+  .oai-badge-row a:nth-child(5) { margin-right: 0; }
+  .oai-badge-row a:nth-child(3),
+  .oai-badge-row a:nth-child(6),
+  .oai-badge-row a:nth-child(9) {
+    margin-right: calc(100% - 3 * 64px - 2 * 12px);
   }
 }
 .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
