@@ -347,21 +347,38 @@ a.card-link:hover { text-decoration: none; }
   display: block; width: 72px; height: 72px;
 }
 .cred:has(.oai-badge-row) { grid-column: 1 / -1; }
-/* Seven 72px badges need 576px on one line. Narrower: 4+3, then 3+2+2. */
+/* Eleven 72px badges need 912px on one line (twelve would need 996px).
+   About at ~924px still holds 72px. Home is ~716px, so shrink to 56px
+   with an 8px gap (696px) to stay on one line. A twelfth at 52px would
+   still fit Home (712px). Narrower: wrap after the five purple badges
+   (5+6 now; 6+6 later if the twelfth is purple). */
 #backed-by .prose,
 .cred:has(.oai-badge-row) { container-type: inline-size; }
-@container (max-width: 575px) {
-  .oai-badge-row a:nth-child(4) {
-    margin-right: calc(100% - 4 * 72px - 3 * 12px);
+@container (max-width: 911px) {
+  .oai-badge-row img { width: 64px; height: 64px; }
+}
+@container (max-width: 823px) {
+  .oai-badge-row { gap: 8px; }
+  .oai-badge-row img { width: 56px; height: 56px; }
+}
+@container (max-width: 695px) {
+  .oai-badge-row a:nth-child(5) {
+    margin-right: calc(100% - 5 * 56px - 4 * 8px);
   }
 }
-@container (max-width: 323px) {
-  .oai-badge-row a:nth-child(4) { margin-right: 0; }
-  .oai-badge-row a:nth-child(3) {
-    margin-right: calc(100% - 3 * 72px - 2 * 12px);
-  }
+/* Five 56px badges need 312px; shrink to 48px so a 5+6 wrap can
+   hold in the ~346px Home column. The tighter ~290px About card
+   cannot fit six at 48px, so greens wrap 3+3 (5+3+3). */
+@container (max-width: 347px) {
+  .oai-badge-row img { width: 48px; height: 48px; }
+  .oai-badge-row { gap: 8px; }
   .oai-badge-row a:nth-child(5) {
-    margin-right: calc(100% - 2 * 72px - 12px);
+    margin-right: calc(100% - 5 * 48px - 4 * 8px);
+  }
+}
+@container (max-width: 327px) {
+  .oai-badge-row a:nth-child(8) {
+    margin-right: calc(100% - 3 * 48px - 2 * 8px);
   }
 }
 .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
