@@ -347,30 +347,38 @@ a.card-link:hover { text-decoration: none; }
   display: block; width: 72px; height: 72px;
 }
 .cred:has(.oai-badge-row) { grid-column: 1 / -1; }
-/* Ten 72px badges need 828px on one line. Shrink as the container
-   tightens so desktop Home stays one line (10×60px + 12px gaps = 708px,
-   which fits the ~716px Home prose). Mid widths wrap 5+5. The tight
-   About card shrinks a little further so five still fit on a line. */
+/* Eleven 72px badges need 912px on one line (twelve would need 996px).
+   About at ~924px still holds 72px. Home is ~716px, so shrink to 56px
+   with an 8px gap (696px) to stay on one line. A twelfth at 52px would
+   still fit Home (712px). Narrower: wrap after the five purple badges
+   (5+6 now; 6+6 later if the twelfth is purple). */
 #backed-by .prose,
 .cred:has(.oai-badge-row) { container-type: inline-size; }
-@container (max-width: 827px) {
+@container (max-width: 911px) {
   .oai-badge-row img { width: 64px; height: 64px; }
 }
-@container (max-width: 747px) {
-  .oai-badge-row img { width: 60px; height: 60px; }
+@container (max-width: 823px) {
+  .oai-badge-row { gap: 8px; }
+  .oai-badge-row img { width: 56px; height: 56px; }
 }
-@container (max-width: 707px) {
+@container (max-width: 695px) {
   .oai-badge-row a:nth-child(5) {
-    margin-right: calc(100% - 5 * 60px - 4 * 12px);
+    margin-right: calc(100% - 5 * 56px - 4 * 8px);
   }
 }
-/* Five 60px badges need 348px; shrink so 5+5 still holds in the
-   ~290px About card and ~346px Home column. */
+/* Five 56px badges need 312px; shrink to 48px so a 5+6 wrap can
+   hold in the ~346px Home column. The tighter ~290px About card
+   cannot fit six at 48px, so greens wrap 3+3 (5+3+3). */
 @container (max-width: 347px) {
   .oai-badge-row img { width: 48px; height: 48px; }
   .oai-badge-row { gap: 8px; }
   .oai-badge-row a:nth-child(5) {
     margin-right: calc(100% - 5 * 48px - 4 * 8px);
+  }
+}
+@container (max-width: 327px) {
+  .oai-badge-row a:nth-child(8) {
+    margin-right: calc(100% - 3 * 48px - 2 * 8px);
   }
 }
 .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
